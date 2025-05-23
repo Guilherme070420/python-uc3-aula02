@@ -25,7 +25,7 @@ def hangmangame():
                 print(f"=====================================================================================")
                 print(f"Você acertou uma letra")
                 print(f"=====================================================================================")
-                point = point + 1
+                point = point + wordselect.count(letter)
                 wordsalreadytried.append(letter)
                 playattempt = playattempt -1
             else:
